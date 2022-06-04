@@ -198,6 +198,59 @@ p.abilities span:after {
 
 .bord_back > div {height: 100%;}
 
+.buscador {
+  margin-bottom: 30px;
+}
+
+.buscador input {
+  padding: 4px;
+}
+
+.buscador button {
+    background: #2d70b7;
+    color: #ffcb05;
+    margin-bottom: 0;
+    padding: 5px 12px;
+    top: -2px;
+    position: relative;
+    border-radius: 0;
+}
+
+.buscador input {
+    border: 1px solid #1b4e85;
+}
+
+@media (prefers-color-scheme: dark) {
+  body   { background:  #333; color: white; }
+}
+
+@media (prefers-color-scheme: light) {
+  body  { background: white; color:  #555; }
+}
+
+@media (max-width: 768px){
+.row.details_pokemon {
+    flex-direction: column-reverse;
+}
+.row.details_pokemon > div:last-child {
+    margin-bottom: 80px;
+}
+.row.details_pokemon > div {
+    margin-bottom: 50px;
+}
+.itemsAbout h5 {
+    width: 38%;
+}
+.stats_item > span:first-child {
+    line-height: 1.2;
+    width: 36%;
+    font-size: 14px;
+}
+.buscador input {
+    width: 82% !important;
+}
+}
+
 @media (max-width: 600px){
   .list_poke.row .col-item {
     width: 46%;

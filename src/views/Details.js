@@ -33,15 +33,11 @@ const Details =(props)=> {
     }
     //console.log("Data ",location.state.abilities)
 
-    if(location.state.stats.base_stat > 100){
-        location.state.stats.base_stat = 100;
-    }
-
     return (
         <div className="container" style={{marginTop: "30px"}}>
             <Boton onClick={() => navigate(-1)} onpress={() => navigate(-1) }></Boton>
-            <div className="row" style={{alignItems: "center"}}>
-                <div className="col-6">
+            <div className="row details_pokemon" style={{alignItems: "center"}}>
+                <div className="col-lg-6 col-md-12">
                 <ul className="nav nav-tabs" id="pills-tab" role="tablist">
                      <li className="nav-item" role="presentation">
                         <button className="nav-link active" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="true">About</button>
@@ -96,7 +92,7 @@ const Details =(props)=> {
                     </div>
                 </div>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12">
                 <h2 style={{textAlign: "center", textTransform: "capitalize", fontFamily: "cursive"}}>{location.state.name}</h2>
                 {dataspecies?.color?.name && (
                         <div className="tipos_item">{location.state.types.map((it)=>
